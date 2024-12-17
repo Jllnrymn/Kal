@@ -11,27 +11,47 @@
     height: 3rem;
     text-align: right;
    }
-   .btn-number {
-    background-color: #f8f9fa;
-    color: #212529;
-}
-.btn-number:hover {
-    background-color: #e9ecef;
-}
-.btn-operator {
-    background-color: #ffc107;
-    color: #212529;
-}
-.btn-operator:hover {
-    background-color: #ffcd39;
-}
-.btn-clear, .btn-clear-history {
-    background-color: #dc3545;
-    color: #fff;
-}
-.btn-clear:hover, .btn-clear-history:hover {
-    background-color: #c82333;
-}
+   btn {
+   border-radius: 50px;
+   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .btn-number {
+            background-color: #e9ecef;
+        }
+        .btn-number:hover {
+            background-color: #dee2e6;
+        }
+        .btn-operator {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-operator:hover {
+            background-color: #0056b3;
+        }
+        .btn-clear, .btn-clear-history {
+            background-color: #dc3545;
+            color: white;
+        }
+        .btn-clear:hover, .btn-clear-history:hover {
+            background-color: #a71d2a;
+        }
+        .display {
+            font-size: 1.5rem;
+            text-align: right;
+            font-weight: bold;
+            background-color: #f8f9fa;
+        }
+        .card-header {
+            font-size: 1.25rem;
+        }
+        textarea {
+            font-family: monospace;
+            background-color: #f8f9fa;
+        }
 /* Gaya mode gelap */
 body.dark-mode {
     background-color: #212529;
